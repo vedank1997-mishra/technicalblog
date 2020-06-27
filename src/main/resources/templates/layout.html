@@ -2,6 +2,7 @@
 
 <html xmlns:th="http://thymeleaf.org">
 <head th:fragment="site-head"></head>
+
 <body>
 <header th:fragment="logged-out" th:remove="tag">
     <header>
@@ -10,5 +11,13 @@
     </header>
 </header>
 
+<header th:fragment="logged-in" th:remove="tag">
+    <header>
+        <form method="post">
+            <input type="submit" value="Logout"/>
+        </form>
+    </header>
+</header>
 </body>
+
 </html>
